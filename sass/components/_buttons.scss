@@ -1,8 +1,11 @@
 .btn {
+    display: flex;
     height: 150px;
-    width: 400px;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .btn__colour {
 background-color: $colour-primary;
 }
+
