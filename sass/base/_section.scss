@@ -7,11 +7,26 @@ header {
     display: flex;
     background-color: #c7c7c7;
     width: 100%;
+    justify-content: center;
 }
 
 .explore {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #e3e3e3;
+}
+
+.explore h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.explore p {
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
 /* penser à utiliser les variables pour jouer sur la couleurs des backgrounds */
@@ -20,6 +35,7 @@ header {
     display: flex;
     width: 100%;
     background-color: #e3e3e3;
+    flex-direction: column;
 }
 
 .order {
@@ -38,4 +54,10 @@ nav {
 footer {
     display: flex;
     margin: auto;
+    flex-direction: column;
+}
+
+footer nav a {
+    display: flex;
+    width: 100%;
 }

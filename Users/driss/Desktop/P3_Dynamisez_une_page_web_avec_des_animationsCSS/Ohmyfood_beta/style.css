@@ -21,10 +21,11 @@
 }
 
 .btn__gradiant-purple {
-  background-color: purple;
+  background-color: #9356DC;
   display: flex;
   height: 115px;
   width: 50%;
+  min-width: 330px;
   margin: auto;
   margin-bottom: 30px;
   border-radius: 60px;
@@ -43,7 +44,7 @@ card-section__restaurants {
   flex-wrap: wrap;
   width: 80%;
   height: 300px;
-  margin-bottom: 20px;
+  margin: auto auto 30px auto;
   border-radius: 20px;
   text-decoration: none;
   color: black;
@@ -82,11 +83,26 @@ header {
   display: flex;
   background-color: #c7c7c7;
   width: 100%;
+  justify-content: center;
 }
 
 .explore {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #e3e3e3;
+}
+
+.explore h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.explore p {
+  display: flex;
+  width: 100%;
   justify-content: center;
 }
 
@@ -95,6 +111,7 @@ header {
   display: flex;
   width: 100%;
   background-color: #e3e3e3;
+  flex-direction: column;
 }
 
 .order {
@@ -112,6 +129,12 @@ nav {
 footer {
   display: flex;
   margin: auto;
+  flex-direction: column;
+}
+
+footer nav a {
+  display: flex;
+  width: 100%;
 }
 
 /* logo et titre : Shrikhand 

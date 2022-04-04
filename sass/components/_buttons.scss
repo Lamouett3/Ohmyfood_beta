@@ -21,10 +21,11 @@ font-size: x-large;
 }
 
 .btn__gradiant-purple {
-    background-color: purple;
+    background-color: $colour-primary;
     display: flex;
     height: 115px;
     width: 50%;
+    min-width: 330px;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 60px;
