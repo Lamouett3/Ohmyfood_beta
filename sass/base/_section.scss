@@ -1,13 +1,18 @@
+body {
+    margin: 0;
+}
 header {
     display: flex;
     justify-content: center;
+    background-color: $colour-background--two;
 }
 
 .locate {
     display: flex;
-    background-color: #c7c7c7;
+    background-color: $colour-background__locate;
     width: 100%;
     justify-content: center;
+    font-weight: bolder;
 }
 
 .explore {
@@ -15,7 +20,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #e3e3e3;
+    background-color: $colour-background;
 }
 
 .explore h1 {
@@ -34,7 +39,7 @@ header {
 #explore {
     display: flex;
     width: 100%;
-    background-color: #e3e3e3;
+    background-color:$colour-background;
     flex-direction: column;
 }
 
@@ -42,6 +47,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: $colour-background--two;
 }
 
 nav {
@@ -54,7 +60,10 @@ nav {
 footer {
     display: flex;
     margin: auto;
+    padding-left: 20px;
     flex-direction: column;
+    background-color: $colour-footer;
+    color: whitesmoke;
 }
 
 footer nav a {

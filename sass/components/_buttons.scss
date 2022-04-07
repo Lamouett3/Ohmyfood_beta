@@ -1,19 +1,30 @@
 .btn {
     display: flex;
-    height: 115px;
+    height: 100px;
     width: 80%;
+    padding-top: 20px;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 35px;
     justify-content: center;
-}
-
-.btn__colour {
-background-color: $colour-buttons;
-box-shadow: 0px 5px 20px #999;
-color: black;
-font-size: x-large;
-
+        &__colour {
+        background-color: $colour-background;
+        box-shadow: 0px 5px 20px #999;
+        color: black;
+        font-size: x-large;
+            &--two {
+                background-color: $colour-background;
+                box-shadow: 0px 5px 20px #999;
+                color: black;
+                font-size: x-large;
+            }
+            &--three {
+                background-color: $colour-background__order3;
+                box-shadow: 0px 5px 20px #999;
+                color: black;
+                font-size: x-large;
+            }
+          }
 }
 
 .btn--order__position {
@@ -21,9 +32,8 @@ font-size: x-large;
 }
 
 .btn__gradiant-purple {
-    background-color: $colour-primary;
+    background: linear-gradient($colour-primary, $colour-secondary);
     display: flex;
-    height: 115px;
     width: 50%;
     min-width: 330px;
     margin: auto;
