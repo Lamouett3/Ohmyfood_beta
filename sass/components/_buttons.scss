@@ -25,22 +25,22 @@
                 font-size: x-large;
             }
           }
+        &__gradiant-purple {
+            background: linear-gradient($colour-primary, $colour-secondary);
+            display: flex;
+            width: 50%;
+            min-width: 330px;
+            margin: auto;
+            margin-bottom: 80px;
+            border-radius: 60px;
+            justify-content: center;
+            text-decoration: none;
+            font-size: x-large;
+            color: whitesmoke;
+        }
 }
 
 .btn--order__position {
     margin-top: 20px;
 }
 
-.btn__gradiant-purple {
-    background: linear-gradient($colour-primary, $colour-secondary);
-    display: flex;
-    width: 50%;
-    min-width: 330px;
-    margin: auto;
-    margin-bottom: 30px;
-    border-radius: 60px;
-    justify-content: center;
-    text-decoration: none;
-    font-size: x-large;
-    color: whitesmoke;
-}

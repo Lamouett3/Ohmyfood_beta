@@ -3,14 +3,21 @@ body {
 }
 header {
     display: flex;
+    height: 80px;
     justify-content: center;
     background-color: $colour-background--two;
 }
 
+header img {
+    margin: auto;
+    height: 30px;
+
+}
 .locate {
     display: flex;
     background-color: $colour-background__locate;
     width: 100%;
+    height: 70px;
     justify-content: center;
     font-weight: bolder;
 }
@@ -19,14 +26,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    height: 350px;
     background-color: $colour-background;
-}
-
-.explore h1 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
 }
 
 .explore p {
