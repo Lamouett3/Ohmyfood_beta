@@ -1,5 +1,7 @@
 body {
-    margin: 0;
+    margin: auto;
+    max-width: 669px;
+    background-color: $colour-background;
 }
 header {
     display: flex;
@@ -54,7 +56,6 @@ header img {
 nav {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
 }
 
 

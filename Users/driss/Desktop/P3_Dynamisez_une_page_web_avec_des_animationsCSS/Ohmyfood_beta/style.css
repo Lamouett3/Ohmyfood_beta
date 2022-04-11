@@ -40,6 +40,17 @@
   font-size: x-large;
   color: whitesmoke;
 }
+.btn--restaurant {
+  display: flex;
+  width: 80%;
+  height: 80px;
+  padding-top: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .btn--order__position {
   margin-top: 20px;
@@ -85,7 +96,9 @@
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  max-width: 669px;
+  background-color: #f6F6F6;
 }
 
 header {
@@ -141,7 +154,6 @@ header img {
 nav {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
 }
 
 footer {
@@ -172,10 +184,50 @@ footer nav a {
 }
 
 /* pour chevaucher la photo sur le menu penser à margin bottom ou top en valeur negative */
+.titre {
+  display: flex;
+  flex-direction: row;
+}
+.titre__restaurant {
+  display: flex;
+  flex-direction: row;
+}
+.titre__menu {
+  font-weight: bolder;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  margin-left: 4%;
+}
+.titre--description {
+  color: #484848;
+  font-size: 15px;
+  width: 70%;
+  height: 50%;
+  margin: 0;
+  margin-left: 4%;
+}
+
+.titre__restaurant i {
+  margin-left: 55%;
+}
+
 .menu {
-  border-radius: 30px 30px;
+  border-radius: 30px 30px 0 0;
   background-color: #f6F6F6;
   position: relative;
+}
+
+.menu p {
+  flex-wrap: wrap;
+}
+
+.menu div {
+  max-width: 80%;
+}
+
+.price {
+  margin: auto;
 }
 
 .command {
@@ -203,6 +255,15 @@ h1, h2, h3 {
 
 .menu h1 {
   font-family: "Shrikhand", cursive;
+}
+
+.menu h2 {
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu p {
+  font-family: "Roboto", sans-serif;
 }
 
 .explore h1 {

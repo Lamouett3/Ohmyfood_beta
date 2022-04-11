@@ -21,12 +21,20 @@ h1, h2, h3 {
 .menu h1{
     font-family: 'Shrikhand', cursive;
 }
+.menu h2{
+    color: $colour-footer ;
+    font-family: 'Roboto', sans-serif;
+}
+.menu p {
+    font-family: 'Roboto', sans-serif;
+}
 .explore h1 {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 50px;
 }
+
 footer h4 {
     font-family: 'Shrikhand', cursive;
 }

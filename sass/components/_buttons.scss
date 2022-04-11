@@ -38,6 +38,17 @@
             font-size: x-large;
             color: whitesmoke;
         }
+        &--restaurant{
+            display: flex;
+            width: 80%;
+            height: 80px;
+            padding-top: 20px;
+            margin: auto;
+            margin-bottom: 30px;
+            border-radius: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 }
 
 .btn--order__position {
