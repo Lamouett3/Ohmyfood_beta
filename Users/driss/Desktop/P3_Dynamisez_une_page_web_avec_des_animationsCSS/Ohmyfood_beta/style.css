@@ -151,6 +151,23 @@ header img {
   background-color: #ffffff;
 }
 
+.order--number {
+  display: flex;
+  border-radius: 50%;
+  background-color: #9356DC;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  margin-left: -30%;
+  margin-right: 15%;
+  margin-top: 3%;
+}
+
+.order--number p {
+  margin: 25%;
+  color: #ffffff;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +226,7 @@ footer nav a {
 }
 
 .titre__restaurant i {
-  margin-left: 55%;
+  margin-left: 50%;
 }
 
 .menu {
@@ -220,10 +237,6 @@ footer nav a {
 
 .menu p {
   flex-wrap: wrap;
-}
-
-.menu div {
-  max-width: 80%;
 }
 
 .price {
