@@ -241,6 +241,7 @@ footer nav a {
 
 .price {
   margin: auto;
+  margin-top: -10px;
 }
 
 .command {
