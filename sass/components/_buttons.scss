@@ -53,10 +53,7 @@
             border-radius: 25px;
             justify-content: center;
             flex-wrap: wrap;
-        &:hover {
-            transform: translate(100px, 0);
-            transition: transform 330ms ease-in-out;
-        }
+            transform-origin: left;
         }
 }
 

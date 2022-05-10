@@ -55,10 +55,7 @@
   border-radius: 25px;
   justify-content: center;
   flex-wrap: wrap;
-}
-.btn--restaurant:hover {
-  transform: translate(100px, 0);
-  transition: transform 330ms ease-in-out;
+  transform-origin: left;
 }
 
 .btn--order__position {
@@ -327,6 +324,18 @@ footer h4 {
 
 .fa-hands-helping {
   margin: 16px 5px 5px 5px;
+}
+
+@keyframes btn--restaurant {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.btn--restaurant {
+  animation: btn--restaurant 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
