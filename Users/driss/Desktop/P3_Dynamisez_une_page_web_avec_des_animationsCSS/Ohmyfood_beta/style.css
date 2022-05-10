@@ -40,6 +40,11 @@
   font-size: x-large;
   color: whitesmoke;
 }
+.btn__gradiant-purple:hover {
+  transform: scale(1.15);
+  transition-duration: 500ms;
+  box-shadow: 0px 5px 20px #999;
+}
 .btn--restaurant {
   display: flex;
   width: 80%;
@@ -50,6 +55,10 @@
   border-radius: 25px;
   justify-content: center;
   flex-wrap: wrap;
+}
+.btn--restaurant:hover {
+  transform: translate(100px, 0);
+  transition: transform 330ms ease-in-out;
 }
 
 .btn--order__position {
