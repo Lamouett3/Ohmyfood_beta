@@ -1,0 +1,35 @@
+/* FONT AWESOME SECTION */
+
+.fa-map-marker-alt{
+    margin: 17px 15px;
+}
+.fa-mobile-alt {
+    margin: 25px 10px;
+}
+.fa-list-ul {
+    margin: 25px 10px;
+}
+.fa-store {
+    margin: 25px 10px;
+}
+.fa-heart {
+    margin-top: 20px;
+  }
+
+  .fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+  }
+  .fa-heart:hover::before{
+    color: purple;
+      cursor: pointer;
+  }
+
+.fa-utensils {
+    margin: 16px 5px 5px 5px;
+}
+
+.fa-hands-helping {
+    margin: 16px 5px 5px 5px;
+}

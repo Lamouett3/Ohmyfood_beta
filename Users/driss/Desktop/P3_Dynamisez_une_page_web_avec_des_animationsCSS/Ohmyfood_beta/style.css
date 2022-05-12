@@ -56,7 +56,7 @@
   justify-content: center;
   flex-wrap: wrap;
   transform-origin: left;
-  animation: btn--restaurant 1s;
+  animation: btn--restaurant 500ms;
 }
 
 .btn--order__position {
@@ -319,6 +319,17 @@ footer h4 {
   margin-top: 20px;
 }
 
+.fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  color: purple;
+  cursor: pointer;
+}
+
 .fa-utensils {
   margin: 16px 5px 5px 5px;
 }
@@ -331,8 +342,56 @@ footer h4 {
   0% {
     transform: translateX(-9999px);
   }
+  33% {
+    transform: translateX(-6666px);
+  }
+  66% {
+    transform: translateX(-3333px);
+  }
   100% {
     transform: translateX(0);
+  }
+}
+/* LOADER */
+.container-loader {
+  position: absolute;
+  background: whitesmoke;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.dot-1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+.dot-2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+.dot-3 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
   }
 }
 
