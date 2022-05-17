@@ -28,6 +28,10 @@ h1, h2, h3 {
 .menu p {
     font-family: 'Roboto', sans-serif;
 }
+.menu p {
+    flex-wrap: wrap;
+}
+
 .explore h1 {
     display: flex;
     width: 100%;

@@ -45,10 +45,15 @@
     background-color: $colour-background;
     position: relative;
 }
-.menu p {
-    flex-wrap: wrap;
+.section--entree {
+    animation: section--entree 300ms;
 }
-
+.section--plat {
+    animation: section--plat 600ms;  
+}
+.section--dessert {
+    animation: section--plat 900ms;  
+}
 .price {
     margin: auto;
     margin-top: -10px;

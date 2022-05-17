@@ -74,8 +74,6 @@
   border-radius: 25px;
   justify-content: center;
   flex-wrap: wrap;
-  transform-origin: left;
-  animation: btn--restaurant 2s;
 }
 
 .btn--order__position {
@@ -270,8 +268,16 @@ footer nav a {
   position: relative;
 }
 
-.menu p {
-  flex-wrap: wrap;
+.section--entree {
+  animation: section--entree 300ms;
+}
+
+.section--plat {
+  animation: section--plat 600ms;
+}
+
+.section--dessert {
+  animation: section--plat 900ms;
 }
 
 .price {
@@ -313,6 +319,10 @@ h1, h2, h3 {
 
 .menu p {
   font-family: "Roboto", sans-serif;
+}
+
+.menu p {
+  flex-wrap: wrap;
 }
 
 .explore h1 {
@@ -380,14 +390,42 @@ footer h4 {
   margin: 16px 5px 5px 5px;
 }
 
-@keyframes btn--restaurant {
+@keyframes section--entree {
   0% {
     opacity: 0;
   }
   50% {
+    opacity: 1;
     transform: translateY(8px);
   }
   100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes section--plat {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes section--dessert {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }

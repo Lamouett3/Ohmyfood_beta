@@ -1,11 +1,39 @@
-@keyframes btn--restaurant{
+@keyframes section--entree{
     0% {
         opacity: 0;
     }
     50% {
+        opacity: 1;
         transform: translateY(8px);
     }                     
     100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes section--plat{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(8px);
+    }                     
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes section--dessert{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(8px);
+    }                     
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
