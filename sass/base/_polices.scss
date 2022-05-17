@@ -33,8 +33,20 @@ h1, h2, h3 {
     width: 100%;
     justify-content: center;
     margin-top: 50px;
+    text-align: center;
 }
-
+.explore p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.locate p {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
 footer h4 {
     font-family: 'Shrikhand', cursive;
 }

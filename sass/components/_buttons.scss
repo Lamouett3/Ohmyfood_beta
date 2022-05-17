@@ -2,6 +2,7 @@
     display: flex;
     height: 100px;
     width: 80%;
+    min-width: 350px;
     padding-top: 20px;
     margin: auto;
     margin-bottom: 30px;
@@ -12,17 +13,35 @@
         box-shadow: 0px 5px 20px #999;
         color: black;
         font-size: x-large;
+            &--one {
+                background-color: $colour-background;
+                box-shadow: 0px 5px 20px #999;
+                color: black;
+                font-size: x-large;
+                    &:hover {
+                        transition-duration: 500ms;
+                        background-color: $colour-background__order3;
+                    }
+            }
             &--two {
                 background-color: $colour-background;
                 box-shadow: 0px 5px 20px #999;
                 color: black;
                 font-size: x-large;
+                    &:hover {
+                        transition-duration: 500ms;
+                        background-color: $colour-background__order3;
+                    }
             }
             &--three {
-                background-color: $colour-background__order3;
+                background-color: $colour-background;
                 box-shadow: 0px 5px 20px #999;
                 color: black;
                 font-size: x-large;
+                    &:hover {
+                        transition-duration: 500ms;
+                        background-color: $colour-background__order3;
+                    }    
             }
           }
         &__gradiant-purple {
@@ -54,7 +73,7 @@
             justify-content: center;
             flex-wrap: wrap;
             transform-origin: left;
-            animation: btn--restaurant 500ms;
+            animation: btn--restaurant 2s;
         }
 }
 

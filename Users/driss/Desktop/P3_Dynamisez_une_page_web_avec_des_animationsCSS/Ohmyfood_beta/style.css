@@ -3,6 +3,7 @@
   display: flex;
   height: 100px;
   width: 80%;
+  min-width: 350px;
   padding-top: 20px;
   margin: auto;
   margin-bottom: 30px;
@@ -15,17 +16,35 @@
   color: black;
   font-size: x-large;
 }
+.btn__colour--one {
+  background-color: #f6F6F6;
+  box-shadow: 0px 5px 20px #999;
+  color: black;
+  font-size: x-large;
+}
+.btn__colour--one:hover {
+  transition-duration: 500ms;
+  background-color: #F5EDFF;
+}
 .btn__colour--two {
   background-color: #f6F6F6;
   box-shadow: 0px 5px 20px #999;
   color: black;
   font-size: x-large;
 }
-.btn__colour--three {
+.btn__colour--two:hover {
+  transition-duration: 500ms;
   background-color: #F5EDFF;
+}
+.btn__colour--three {
+  background-color: #f6F6F6;
   box-shadow: 0px 5px 20px #999;
   color: black;
   font-size: x-large;
+}
+.btn__colour--three:hover {
+  transition-duration: 500ms;
+  background-color: #F5EDFF;
 }
 .btn__gradiant-purple {
   background: linear-gradient(#9356DC, #FF79DA);
@@ -56,7 +75,7 @@
   justify-content: center;
   flex-wrap: wrap;
   transform-origin: left;
-  animation: btn--restaurant 500ms;
+  animation: btn--restaurant 2s;
 }
 
 .btn--order__position {
@@ -71,6 +90,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  min-width: 350px;
   height: 300px;
   margin: auto auto 30px auto;
   border-radius: 20px;
@@ -78,6 +98,7 @@
   color: black;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
+  cursor: initial;
 }
 
 .card__image {
@@ -96,15 +117,26 @@
 }
 
 .card-titre__restaurants {
+  font-weight: bold;
   display: flex;
   width: 80%;
   min-width: 80%;
-  margin-left: 20px;
+  font-size: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.card-titre__ville {
+  display: flex;
+  width: 80%;
+  min-width: 80%;
+  margin-left: 15px;
+  margin-top: -25px;
 }
 
 body {
   margin: auto;
   max-width: 669px;
+  min-width: 360px;
   background-color: #f6F6F6;
 }
 
@@ -137,12 +169,6 @@ header img {
   background-color: #f6F6F6;
 }
 
-.explore p {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 /* penser à utiliser les variables pour jouer sur la couleurs des backgrounds */
 #explore {
   display: flex;
@@ -158,6 +184,11 @@ header img {
   background-color: #ffffff;
 }
 
+.order__titre {
+  display: flex;
+  justify-content: center;
+}
+
 .order--number {
   display: flex;
   border-radius: 50%;
@@ -165,9 +196,6 @@ header img {
   height: 50px;
   width: 50px;
   justify-content: center;
-  margin-left: -30%;
-  margin-right: 15%;
-  margin-top: 3%;
 }
 
 .order--number p {
@@ -292,6 +320,21 @@ h1, h2, h3 {
   width: 100%;
   justify-content: center;
   margin-top: 50px;
+  text-align: center;
+}
+
+.explore p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.locate p {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 footer h4 {
@@ -316,18 +359,17 @@ footer h4 {
 }
 
 .fa-heart {
-  margin-top: 20px;
+  margin-top: -40px;
 }
 
 .fa-heart::before {
   content: "\f004";
-  font-weight: bold;
   transition: color 1s ease-out;
 }
 
 .fa-heart:hover::before {
-  color: purple;
-  cursor: pointer;
+  color: red;
+  font-weight: bold;
 }
 
 .fa-utensils {
@@ -340,16 +382,13 @@ footer h4 {
 
 @keyframes btn--restaurant {
   0% {
-    transform: translateX(-9999px);
+    opacity: 0;
   }
-  33% {
-    transform: translateX(-6666px);
-  }
-  66% {
-    transform: translateX(-3333px);
+  50% {
+    transform: translateY(8px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 /* LOADER */

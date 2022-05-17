@@ -13,17 +13,16 @@
     margin: 25px 10px;
 }
 .fa-heart {
-    margin-top: 20px;
+    margin-top: -40px;
   }
 
   .fa-heart::before {
     content: "\f004";
-    font-weight: bold;
     transition: color 1s ease-out;
   }
   .fa-heart:hover::before{
-    color: purple;
-      cursor: pointer;
+    color: red;
+    font-weight: bold;
   }
 
 .fa-utensils {
