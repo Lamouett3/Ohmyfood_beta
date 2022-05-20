@@ -269,15 +269,15 @@ footer nav a {
 }
 
 .section--entree {
-  animation: section--entree 300ms;
+  animation: section--entree 600ms;
 }
 
 .section--plat {
-  animation: section--plat 600ms;
+  animation: section--plat 1s;
 }
 
 .section--dessert {
-  animation: section--plat 900ms;
+  animation: section--plat 1.4s;
 }
 
 .price {
