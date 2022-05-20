@@ -269,7 +269,7 @@ footer nav a {
 }
 
 .section--entree {
-  animation: section--entree 600ms;
+  animation: section--entree 500ms;
 }
 
 .section--plat {
@@ -277,7 +277,7 @@ footer nav a {
 }
 
 .section--dessert {
-  animation: section--plat 1.4s;
+  animation: section--plat 1.5s;
 }
 
 .price {
