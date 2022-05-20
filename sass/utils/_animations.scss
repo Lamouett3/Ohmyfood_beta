@@ -1,9 +1,10 @@
 @keyframes section--entree{
     0% {
         opacity: 0;
+        transform: translateY(8px);
     }
     50% {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(8px);
     }                     
     100% {
@@ -14,6 +15,7 @@
 @keyframes section--plat{
     0% {
         opacity: 0;
+        transform: translateY(8px);
     }
     50% {
         opacity: 0;
@@ -27,6 +29,7 @@
 @keyframes section--dessert{
     0% {
         opacity: 0;
+        transform: translateY(8px);
     }
     50% {
         opacity: 0;
@@ -42,7 +45,7 @@
 .container-loader {
 
     position: absolute;
-    background: whitesmoke;
+    background: linear-gradient($colour-primary,$colour-secondary);
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -52,33 +55,37 @@
 }
 
 .dot{
-
+    
     &-1{
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        background: #000;
+        background: whitesmoke;
         margin: 0 15px;
         animation: loader infinite 0.3s alternate;
+        animation-delay: 0;
     }
     &-2 {
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        background: #000;
+        background: whitesmoke;
         margin: 0 15px;
         animation: loader infinite 0.3s alternate;
+        animation-delay: 0.1s;
     }
     &-3 {
         height: 50px;
         width: 50px;
         border-radius: 50%;
-        background: #000;
+        background: whitesmoke;
         margin: 0 15px;
         animation: loader infinite 0.3s alternate;
+        animation-delay: 0.2s;
     }
 }
 @keyframes loader {
+
     100%{
         transform: translateY(-30px);
     }
