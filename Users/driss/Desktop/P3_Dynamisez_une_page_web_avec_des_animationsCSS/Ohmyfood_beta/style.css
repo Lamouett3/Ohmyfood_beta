@@ -50,6 +50,7 @@
   background: linear-gradient(#9356DC, #FF79DA);
   display: flex;
   width: 50%;
+  height: 80px;
   min-width: 330px;
   margin: auto;
   margin-bottom: 80px;
@@ -89,8 +90,8 @@
   flex-wrap: wrap;
   width: 80%;
   min-width: 350px;
-  height: 300px;
-  margin: auto auto 30px auto;
+  height: 280px;
+  margin: auto auto 23px auto;
   border-radius: 20px;
   text-decoration: none;
   color: black;
@@ -180,6 +181,7 @@ header img {
   flex-direction: column;
   width: 100%;
   background-color: #ffffff;
+  position: relative;
 }
 
 .order__titre {
@@ -194,6 +196,11 @@ header img {
   height: 50px;
   width: 50px;
   justify-content: center;
+  z-index: 2;
+  right: 86%;
+  margin-top: 13px;
+  margin-right: 5px;
+  position: absolute;
 }
 
 .order--number p {
@@ -331,6 +338,8 @@ h1, h2, h3 {
   justify-content: center;
   margin-top: 50px;
   text-align: center;
+  font-weight: bolder;
+  margin-bottom: 0;
 }
 
 .explore p {
@@ -338,6 +347,13 @@ h1, h2, h3 {
   width: 100%;
   justify-content: center;
   text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #353535;
+}
+
+.explore a {
+  margin: auto;
 }
 
 .locate p {
@@ -345,6 +361,7 @@ h1, h2, h3 {
   width: 100%;
   justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 footer h4 {
