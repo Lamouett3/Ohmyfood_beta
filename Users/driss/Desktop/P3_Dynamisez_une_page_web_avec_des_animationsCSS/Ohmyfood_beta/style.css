@@ -1,9 +1,10 @@
 @charset "UTF-8";
 .btn {
   display: flex;
-  height: 100px;
+  height: 85px;
   width: 80%;
-  min-width: 350px;
+  min-width: 325px;
+  max-width: 60%;
   padding-top: 20px;
   margin: auto;
   margin-bottom: 30px;
@@ -20,7 +21,8 @@
   background-color: #f6F6F6;
   box-shadow: 0px 5px 20px #999;
   color: black;
-  font-size: x-large;
+  font-size: larger;
+  z-index: 2;
 }
 .btn__colour--one:hover {
   transition-duration: 500ms;
@@ -30,7 +32,8 @@
   background-color: #f6F6F6;
   box-shadow: 0px 5px 20px #999;
   color: black;
-  font-size: x-large;
+  font-size: larger;
+  z-index: 2;
 }
 .btn__colour--two:hover {
   transition-duration: 500ms;
@@ -40,7 +43,8 @@
   background-color: #f6F6F6;
   box-shadow: 0px 5px 20px #999;
   color: black;
-  font-size: x-large;
+  font-size: larger;
+  z-index: 2;
 }
 .btn__colour--three:hover {
   transition-duration: 500ms;
@@ -88,7 +92,8 @@
 .card {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 70%;
+  max-width: 70%;
   min-width: 350px;
   height: 280px;
   margin: auto auto 23px auto;
@@ -164,7 +169,7 @@ header img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 350px;
+  height: 360px;
   background-color: #f6F6F6;
 }
 
@@ -182,6 +187,7 @@ header img {
   width: 100%;
   background-color: #ffffff;
   position: relative;
+  z-index: 1;
 }
 
 .order__titre {
@@ -193,13 +199,12 @@ header img {
   display: flex;
   border-radius: 50%;
   background-color: #9356DC;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   justify-content: center;
-  z-index: 2;
-  right: 86%;
-  margin-top: 13px;
-  margin-right: 5px;
+  z-index: 3;
+  right: 90%;
+  margin-top: 10px;
   position: absolute;
 }
 
@@ -222,9 +227,10 @@ footer {
   color: whitesmoke;
 }
 
-footer nav a {
-  display: flex;
+footer a {
   width: 100%;
+  display: flex;
+  margin-top: -10px;
 }
 
 .picture__restaurant {
@@ -336,10 +342,9 @@ h1, h2, h3 {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 50px;
   text-align: center;
   font-weight: bolder;
-  margin-bottom: 0;
+  margin: 10% 20% 10% 20%;
 }
 
 .explore p {
@@ -347,8 +352,7 @@ h1, h2, h3 {
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 10% 20% 10% 20%;
   color: #353535;
 }
 
@@ -400,11 +404,12 @@ footer h4 {
 }
 
 .fa-utensils {
-  margin: 16px 5px 5px 5px;
+  margin: 18px 8px 0px 0px;
+  padding-right: 7px;
 }
 
 .fa-hands-helping {
-  margin: 16px 5px 5px 5px;
+  margin: 18px 8px 0px 0px;
 }
 
 @keyframes section--entree {

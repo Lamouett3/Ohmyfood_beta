@@ -1,8 +1,9 @@
 .btn {
     display: flex;
-    height: 100px;
+    height: 85px;
     width: 80%;
-    min-width: 350px;
+    min-width: 325px;
+    max-width: 60%;
     padding-top: 20px;
     margin: auto;
     margin-bottom: 30px;
@@ -17,7 +18,8 @@
                 background-color: $colour-background;
                 box-shadow: 0px 5px 20px #999;
                 color: black;
-                font-size: x-large;
+                font-size: larger;
+                z-index: 2;
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;
@@ -27,7 +29,8 @@
                 background-color: $colour-background;
                 box-shadow: 0px 5px 20px #999;
                 color: black;
-                font-size: x-large;
+                font-size: larger;
+                z-index: 2;
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;
@@ -37,7 +40,8 @@
                 background-color: $colour-background;
                 box-shadow: 0px 5px 20px #999;
                 color: black;
-                font-size: x-large;
+                font-size: larger;
+                z-index: 2;
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;

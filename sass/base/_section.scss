@@ -29,7 +29,7 @@ header img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 350px;
+    height: 360px;
     background-color: $colour-background;
 }
 
@@ -49,6 +49,7 @@ header img {
     width: 100%;
     background-color: $colour-background--two;
     position: relative;
+    z-index: 1;
 }
 .order__titre {
     display: flex;
@@ -58,13 +59,12 @@ header img {
     display: flex;
     border-radius: 50%;
     background-color: #9356DC;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     justify-content: center;
-    z-index: 2;
-    right: 86%;
-    margin-top: 13px;
-    margin-right: 5px;
+    z-index: 3;
+    right: 90%;
+    margin-top: 10px;
     position: absolute;
 }
 .order--number p {
@@ -86,7 +86,8 @@ footer {
     color: whitesmoke;
 }
 
-footer nav a {
-    display: flex;
+footer a {
     width: 100%;
+    display: flex;
+    margin-top: -10px;
 }
