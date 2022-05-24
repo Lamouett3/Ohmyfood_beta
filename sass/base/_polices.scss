@@ -38,25 +38,30 @@ h1, h2, h3 {
     justify-content: center;
     text-align: center;
     font-weight: bolder;
-    margin: 10% 20% 10% 20%;
+    margin: 10% 16% 0% 16%;
 }
 .explore p {
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin: 10% 20% 10% 20%;
+    margin: 2% 10% 0% 10%;
     color: $colour-footer;
 }
 .explore a {
     margin: auto;
 }
-.locate p {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.card__image p {
+    position: absolute;
+    left: 65%;
+    height: 25px;
+    width: 85px;
+    padding-top: 5px;
+    border: 1px solid $colour-new;
+    border-radius: 2px;
     text-align: center;
-    margin: auto;
+    color: $colour-new__text;
+    background-color: $colour-new;
 }
 footer h4 {
     font-family: 'Shrikhand', cursive;

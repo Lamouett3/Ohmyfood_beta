@@ -1,3 +1,5 @@
+/* SECTION ANIMATION MENU */
+
 @keyframes section--entree{
     0% {
         opacity: 0;
@@ -40,53 +42,60 @@
         transform: translateY(0);
     }
 }
-/* LOADER */
+/*                     LOADER                        */
 
-.container-loader {
+.loader-zone {
+    background: $colour-new;
+    padding-top: 70%;
+    color: #FFF;
+    text-align: center;
+}
 
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.loader-circles {
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear infinite;
+}
+.loader-circles::after {
+    content: '';
     position: absolute;
-    background: linear-gradient($colour-primary,$colour-secondary);
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    transition: opacity 1s ease-in-out;
+    top: 5px; 
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
 }
-
-.dot{
-    
-    &-1{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background: whitesmoke;
-        margin: 0 15px;
-        animation: loader infinite 0.3s alternate;
-        animation-delay: 0;
-    }
-    &-2 {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background: whitesmoke;
-        margin: 0 15px;
-        animation: loader infinite 0.3s alternate;
-        animation-delay: 0.1s;
-    }
-    &-3 {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background: whitesmoke;
-        margin: 0 15px;
-        animation: loader infinite 0.3s alternate;
-        animation-delay: 0.2s;
-    }
+.loader-circles::before {
+    content: '';
+    position: absolute;
+    top: 12px; 
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    opacity: 0.8;
+    animation: spin 2.5s linear infinite;
 }
-@keyframes loader {
-
-    100%{
-        transform: translateY(-30px);
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

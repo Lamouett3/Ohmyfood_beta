@@ -18,7 +18,7 @@
 
   .fa-heart::before {
     content: "\f004";
-    transition: color 1s ease-out;
+    transition: color 0.5ms ease-out;
   }
   .fa-heart:hover::before{
     color: red;
