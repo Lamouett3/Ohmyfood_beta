@@ -483,35 +483,18 @@ footer h4 {
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
   margin-left: 55%;
-  animation: checked 4s linear;
+  opacity: 0;
+}
+.checked-circle:hover {
+  opacity: 1;
+  transition-duration: 2s;
+  transform: scaleX(1);
+}
+.checked-circle i:hover {
+  transform: rotate(360deg);
+  transition-duration: 900ms;
 }
 
-@keyframes checked {
-  0% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  20% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  40% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  60% {
-    transform: translateX(40px);
-    opacity: 0;
-  }
-  80% {
-    transform: translateX(20px);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 /*                     LOADER                        */
 .loader-zone {
   background: #99E2D0;
