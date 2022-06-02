@@ -43,6 +43,7 @@
     }
 }
 /* SECTION ANIMATION CHECKED */
+
 .checked-circle {
     position: absolute;
     height: 100px;
@@ -52,17 +53,24 @@
     background: $colour-new;
     margin-left: 55%;
     opacity: 0;
-    &:hover{
-       opacity: 1; 
-       transition-duration: 2s;
-       transform: scaleX(1);
+        &:hover{
+            animation: checked linear 1s;
+            opacity: 1;
+        }
+        & i:hover {
+            transform: rotate(360deg);
+            transition-duration: 900ms;
+        }
+}
+@keyframes checked {
+    0%{
+        transform: scaleX(0);
     }
-    & i:hover {
-        transform: rotate(360deg);
-        transition-duration: 900ms;
+
+    100%{
+        transform: scaleX(1);
     }
 }
-
 
 /*                     LOADER                        */
 

@@ -429,6 +429,7 @@ footer h4 {
   display: flex;
   margin: 23%;
   margin-left: 43%;
+  color: #f6F6F6;
 }
 
 /* SECTION ANIMATION MENU */
@@ -486,15 +487,22 @@ footer h4 {
   opacity: 0;
 }
 .checked-circle:hover {
+  animation: checked linear 1s;
   opacity: 1;
-  transition-duration: 2s;
-  transform: scaleX(1);
 }
 .checked-circle i:hover {
   transform: rotate(360deg);
   transition-duration: 900ms;
 }
 
+@keyframes checked {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /*                     LOADER                        */
 .loader-zone {
   background: #99E2D0;
