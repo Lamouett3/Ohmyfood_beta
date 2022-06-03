@@ -12,19 +12,26 @@
 .fa-store {
     margin: 25px 10px;
 }
-.fa-heart {
-    margin-top: -40px;
-  }
+.heart__box {
+   position: relative;
+    svg{
+    width: 30px;
+    height: 30px;
+    }
+    &:hover{
+        #full-heart {
 
-  .fa-heart::before {
-    content: "\f004";
-    transition: color 0.5ms ease-out;
-  }
-  .fa-heart:hover::before{
-    color: red;
-    font-weight: bold;
-  }
-
+            animation: 2s fillHeart linear;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+#full-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
 .fa-utensils {
     margin: 18px 8px 0px 0px;
     padding-right: 7px;

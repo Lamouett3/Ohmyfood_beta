@@ -402,18 +402,23 @@ footer h4 {
   margin: 25px 10px;
 }
 
-.fa-heart {
-  margin-top: -40px;
+.heart__box {
+  position: relative;
+}
+.heart__box svg {
+  width: 30px;
+  height: 30px;
+}
+.heart__box:hover #full-heart {
+  animation: 2s fillHeart linear;
+  animation-fill-mode: forwards;
 }
 
-.fa-heart::before {
-  content: "\f004";
-  transition: color 0.5ms ease-out;
-}
-
-.fa-heart:hover::before {
-  color: red;
-  font-weight: bold;
+#full-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
 .fa-utensils {
@@ -560,6 +565,15 @@ footer h4 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/* heart*/
+@keyframes fillHeart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
