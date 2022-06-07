@@ -29,7 +29,9 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 .menu p {
-    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .explore h1 {

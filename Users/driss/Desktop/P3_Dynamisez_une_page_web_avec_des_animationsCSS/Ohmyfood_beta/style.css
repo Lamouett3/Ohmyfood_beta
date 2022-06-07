@@ -75,8 +75,7 @@
 .btn--restaurant {
   display: flex;
   width: 80%;
-  height: 80px;
-  padding-top: 20px;
+  height: 100px;
   margin: auto;
   margin-bottom: 30px;
   border-radius: 25px;
@@ -299,7 +298,6 @@ footer a {
 
 .price {
   margin: auto;
-  margin-top: -10px;
 }
 
 .command {
@@ -339,7 +337,9 @@ h1, h2, h3 {
 }
 
 .menu p {
-  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .explore h1 {
@@ -431,9 +431,6 @@ footer h4 {
 }
 
 .fa-check-circle {
-  display: flex;
-  margin: 23%;
-  margin-left: 43%;
   color: #f6F6F6;
 }
 
@@ -481,31 +478,65 @@ footer h4 {
   }
 }
 /* SECTION ANIMATION CHECKED */
-.checked-circle {
-  position: absolute;
+.button--animation {
+  width: 90%;
   height: 100px;
-  margin-top: -20px;
-  width: 25%;
-  border-radius: 0 20px 20px 0;
-  background: #99E2D0;
-  margin-left: 55%;
-  opacity: 0;
+  border-radius: 25px;
+  background-color: #FFF;
 }
-.checked-circle:hover {
+.button--animation:hover .checked-circle {
   animation: checked linear 1s;
   opacity: 1;
 }
-.checked-circle i:hover {
+.button--animation:hover i {
   transform: rotate(360deg);
   transition-duration: 900ms;
+  justify-content: center;
+}
+
+.btn--restaurant:hover .checked-circle {
+  animation: checked linear 1s;
+  opacity: 1;
+}
+.btn--restaurant:hover i {
+  transform: rotate(360deg);
+  transition-duration: 900ms;
+  justify-content: center;
+}
+.btn--restaurant:hover .price {
+  animation: text linear 1s;
+}
+
+@keyframes text {
+  0% {
+    margin: auto;
+  }
+  50% {
+    margin: auto;
+  }
+  100% {
+    margin: auto;
+  }
+}
+.checked-circle {
+  position: absolute;
+  height: 100px;
+  width: 20%;
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
+  right: 10%;
+  opacity: 0;
 }
 
 @keyframes checked {
   0% {
-    transform: scaleX(0);
+    width: 0%;
+  }
+  50% {
+    width: 10%;
   }
   100% {
-    transform: scaleX(1);
+    width: 20%;
   }
 }
 /*                     LOADER                        */
