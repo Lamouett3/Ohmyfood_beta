@@ -40,8 +40,8 @@
                 <svg id="full-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <defs>
                         <linearGradient id="MyGradient" gradientTransform="rotate(90)">
-                            <stop offset="5%"  stop-color="green"/>
-                            <stop offset="95%" stop-color="gold"/>
+                            <stop offset="5%"  stop-color="#9356DC"/>
+                            <stop offset="95%" stop-color="#FF79DA"/>
                         </linearGradient>
                     </defs>
                     <path fill="url(#MyGradient)" d="M0 190.9V185.1C0 115.2 50.52 55.58 119.4 44.1C164.1 36.51 211.4 51.37 244 84.02L256 96L267.1 84.02C300.6 51.37 347 36.51 392.6 44.1C461.5 55.58 512 115.2 512 185.1V190.9C512 232.4 494.8 272.1 464.4 300.4L283.7 469.1C276.2 476.1 266.3 480 256 480C245.7 480 235.8 476.1 228.3 469.1L47.59 300.4C17.23 272.1 .0003 232.4 .0003 190.9L0 190.9z"/>
@@ -50,88 +50,129 @@
         </div>
             <h2>ENTRÉES</h2>
             <div class="section--entree">
-<!--
-        ZONE D'ESSAI ANIMATION CIRCLE CHECKED 
-
--->                 
-                    <div class="button--animation">
-                        <div class="checked-circle">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-<!--
-   FIN DE ZONE D'ESSAI ANIMATION CIRCLE CHECKED 
--->
+                        <!--
+                                ZONE D'ESSAI ANIMATION CIRCLE CHECKED 
+                        -->
                     <div class="btn--restaurant btn__colour">
-                        <div>
+                        <div class="bloc--text">
                             <p class="titre__menu">Tartare de poulpe acidulé</p>
                             <p class="titre--description">Aux zestes d'orange </p>
                         </div>
-                        <p class="price">25€</p>    
+                        <div class="bloc--text__price">
+                             <p class="price">25€</p>  
+                        </div>  
                             <div class="checked-circle">
                                 <i class="fas fa-check-circle"></i>
                             </div>
                     </div>
-                    
+
                     <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Velouté de légumes d'antan<br></p>
-                    <p class="titre--description">Carotte, panais, topinambour</p>
-                    <p class="price">35€
-                    </p>
-                </div>
+                        <div class="bloc--text">
+                            <p class="titre__menu">Velouté de légumes d'antan</p>
+                            <p class="titre--description">Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="bloc--text__price">
+                            <p class="price">35€</p>
+                        </div>
+                        <div class="checked-circle">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Soupe à l'oignon<br></p>
-                    <p class="titre--description">Revisitée</p>
-                    <p class="price">20€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Soupe à l'oignon</p>
+                        <p class="titre--description">Revisitée</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">20€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
+
             <h2>PLATS</h2>
             <div class="section--plat">
+
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Coquilles Saint-Jacques<br>
-                    </p>
-                    <p class="titre--description">Accompagnées d'une purée de panais</p>
-                    <p class="price">40€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Coquilles Saint-Jacques</p>
+                        <p class="titre--description">Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">40€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
+
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Magret de canard<br>
-                    </p>
-                    <p class="titre--description">Et parmentier de pommes de terre</p>
-                    <p class="price">35€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Magret de canard</p>
+                        <p class="titre--description">Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">35€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
+
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Pigeonneau d’Ille-et-Vilaine<br>
-                    </p>
-                    <p class="titre--description">Sur son lit de gnocchis aux légumes</p>
-                    <p class="price">44€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Pigeonneau d’Ille-et-Vilaine</p>
+                        <p class="titre--description">Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">44€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
             <h2>DESSERT</h2>
             <div class="section--dessert">
+
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Pétales de violettes glacés<br>
-                    </p>
-                    <p class="titre--description">Et purée de noisettes</p>
-                    <p class="price">18€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Pétales de violettes glacés</p>
+                        <p class="titre--description">Et purée de noisettes</p>
+                    </div>
+                    <div class="bloc--text__price">
+                    <p class="price">18€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Fondant au chocolat<br> 
-                    </p>
-                    <p class="titre--description">Revisité</p>
-                    <p class="price">22€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Fondant au chocolat</p>
+                        <p class="titre--description">Revisité</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">22€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
                 <div class="btn--restaurant btn__colour">
-                    <p class="titre__menu">Millefeuille croustillant<br>
-                    </p>
-                    <p class="titre--description">Myrtilles et pâte d’amande</p>
-                    <p class="price">23€
-                    </p>
+                    <div class="bloc--text">
+                        <p class="titre__menu">Millefeuille croustillant</p>
+                        <p class="titre--description">Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="bloc--text__price">
+                        <p class="price">23€</p>
+                    </div>
+                    <div class="checked-circle">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
                 </div>
             </div>
     </section>

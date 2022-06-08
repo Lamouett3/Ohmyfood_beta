@@ -64,35 +64,38 @@
 .btn--restaurant{
     &:hover{
         .checked-circle{
-            animation: checked linear 1s;
+            animation: checked linear 500ms;
             opacity: 1;
         }
         i {
             transform: rotate(360deg);
-            transition-duration: 900ms;
+            transition-duration: 500ms;
             justify-content: center;
         }
-        .price {
-            animation: text linear 1s;
+        .bloc--text{
+            animation: hidden infinite 1s;
         }
+        .bloc--text__price {
+            animation: text infinite 1s;
+        }
+    }
+}
+@keyframes hidden {
+
+}
+@keyframes text {
+    0%{
+        transform: translate(-200%);
+    }
+    100%{
+        transform: translate(-200%);
     }
 }
 
-@keyframes text {
-    0%{
-        margin: auto;
-    }
-    50% {
-        margin: auto;
-    }
-    100%{
-        margin: auto;
-    }
-}
 .checked-circle{
     position: absolute;
     height: 100px;
-    width: 20%;
+    width: 15%;
     border-radius: 0 20px 20px 0;
     background: $colour-new;
     right: 10%;
@@ -106,7 +109,7 @@
         width: 10%;
     }
     100%{
-        width: 20%;
+        width: 15%;
     }
 }
 

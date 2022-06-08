@@ -79,8 +79,8 @@
   margin: auto;
   margin-bottom: 30px;
   border-radius: 25px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .btn--order__position {
@@ -260,16 +260,19 @@ footer a {
   font-weight: bolder;
   width: 100%;
   height: 50%;
-  margin: 0;
-  margin-left: 4%;
+  position: relative;
+  position: relative;
+  bottom: 10%;
+  left: 5%;
 }
 .titre--description {
   color: #484848;
   font-size: 15px;
   width: 70%;
   height: 50%;
-  margin: 0;
-  margin-left: 4%;
+  position: relative;
+  bottom: 65%;
+  left: 5%;
 }
 
 .titre__restaurant i {
@@ -296,8 +299,23 @@ footer a {
   animation: section--plat 1.2s;
 }
 
+.bloc--text {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloc--text__price {
+  display: flex;
+}
+
 .price {
-  margin: auto;
+  display: flex;
+  position: relative;
+  top: 25%;
+  right: 50%;
 }
 
 .command {
@@ -431,6 +449,9 @@ footer h4 {
 }
 
 .fa-check-circle {
+  position: absolute;
+  top: 40%;
+  left: 40%;
   color: #f6F6F6;
 }
 
@@ -495,33 +516,34 @@ footer h4 {
 }
 
 .btn--restaurant:hover .checked-circle {
-  animation: checked linear 1s;
+  animation: checked linear 500ms;
   opacity: 1;
 }
 .btn--restaurant:hover i {
   transform: rotate(360deg);
-  transition-duration: 900ms;
+  transition-duration: 500ms;
   justify-content: center;
 }
-.btn--restaurant:hover .price {
-  animation: text linear 1s;
+.btn--restaurant:hover .bloc--text {
+  animation: hidden infinite 1s;
+}
+.btn--restaurant:hover .bloc--text__price {
+  animation: text infinite 1s;
 }
 
+@keyframes hidden {}
 @keyframes text {
   0% {
-    margin: auto;
-  }
-  50% {
-    margin: auto;
+    transform: translate(-200%);
   }
   100% {
-    margin: auto;
+    transform: translate(-200%);
   }
 }
 .checked-circle {
   position: absolute;
   height: 100px;
-  width: 20%;
+  width: 15%;
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
   right: 10%;
@@ -536,7 +558,7 @@ footer h4 {
     width: 10%;
   }
   100% {
-    width: 20%;
+    width: 15%;
   }
 }
 /*                     LOADER                        */
