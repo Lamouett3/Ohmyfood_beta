@@ -422,12 +422,25 @@ footer h4 {
 
 .heart__box {
   position: relative;
+  bottom: 10%;
 }
 .heart__box svg {
   width: 30px;
   height: 30px;
 }
 .heart__box:hover #full-heart {
+  animation: 2s fillHeart linear;
+  animation-fill-mode: forwards;
+}
+
+.heart__box--menu {
+  position: relative;
+}
+.heart__box--menu svg {
+  width: 30px;
+  height: 30px;
+}
+.heart__box--menu:hover #full-heart {
   animation: 2s fillHeart linear;
   animation-fill-mode: forwards;
 }

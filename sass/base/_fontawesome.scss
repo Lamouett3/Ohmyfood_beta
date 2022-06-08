@@ -14,6 +14,7 @@
 }
 .heart__box {
    position: relative;
+   bottom: 10%;
     svg{
     width: 30px;
     height: 30px;
@@ -26,6 +27,20 @@
         }
     }
 }
+.heart__box--menu {
+    position: relative;
+     svg{
+     width: 30px;
+     height: 30px;
+     }
+     &:hover{
+         #full-heart {
+ 
+             animation: 2s fillHeart linear;
+             animation-fill-mode: forwards;
+         }
+     }
+ }
 #full-heart {
     position: absolute;
     top: 0;
