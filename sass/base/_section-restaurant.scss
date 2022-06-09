@@ -18,6 +18,7 @@
         &__restaurant {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
         }
         &__menu {
             font-weight: bolder;
@@ -26,7 +27,7 @@
             position: relative;
             position: relative;
             bottom: 10%;
-            left: 5%;
+            left: 10%;
         }
         &--description {
             color: $colour-description;
@@ -35,7 +36,7 @@
             height: 50%;
             position: relative;
             bottom: 65%;
-            left: 5%;
+            left: 10%;
 
         }
 }

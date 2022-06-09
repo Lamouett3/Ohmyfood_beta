@@ -72,23 +72,18 @@
             transition-duration: 500ms;
             justify-content: center;
         }
-        .bloc--text{
-            animation: hidden infinite 1s;
-        }
         .bloc--text__price {
             animation: text infinite 1s;
         }
     }
 }
-@keyframes hidden {
 
-}
 @keyframes text {
     0%{
-        transform: translate(-200%);
+        transform: translateX(-220%);
     }
     100%{
-        transform: translate(-200%);
+        transform: translateX(-220%);
     }
 }
 
@@ -116,7 +111,7 @@
 /*                     LOADER                        */
 
 .loader-zone {
-    background: $colour-new;
+    background: $colour-tertiary;
     padding-top: 50%;
     color: #FFF;
     text-align: center;
