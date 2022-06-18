@@ -50,15 +50,27 @@
     border-radius: 30px 30px 0 0;
     background-color: $colour-background;
     position: relative;
+        @media (min-width: 1024px) {
+            display: flex;
+        }
 }
 .section--entree {
     animation: section--entree 600ms;
+        @media (min-width: 1024px) {
+            width: 30%;
+        }
 }
 .section--plat {
     animation: section--plat 900ms;  
+        @media (min-width: 1024px) {
+            width: 30%;
+        }
 }
 .section--dessert {
     animation: section--plat 1.2s;  
+        @media (min-width: 1024px) {
+            width: 30%;
+        }
 }
 .bloc--text {
     display: flex;
