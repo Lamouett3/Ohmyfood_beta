@@ -113,7 +113,8 @@
 
 .loader-container{
     position: fixed;
-    background: linear-gradient($colour-primary, $colour-secondary);
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,15 +132,17 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: $colour-background;
+    background: $colour-primary;
     margin: 0 15px;
     animation: loader infinite 0.3s alternate;
 }
 .d2 {
     animation-delay: 0.05s;
+    background: $colour-secondary;
 }
 .d3 {
    animation-delay: 0.1s;
+   background: $colour-tertiary;
 }
 
 @keyframes loader {

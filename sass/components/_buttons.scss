@@ -61,11 +61,14 @@
             text-decoration: none;
             font-size: x-large;
             color: whitesmoke;
-        &:hover {
-            transform: scale(1.15);
-            transition-duration: 500ms;
-            box-shadow: 0px 5px 20px #999;
-        }
+                @media (min-width: 1024px) {
+                    max-width: 40%;
+                }
+                    &:hover {
+                        transform: scale(1.15);
+                        transition-duration: 500ms;
+                        box-shadow: 0px 5px 20px #999;
+                    }
         }
         &--restaurant{
             display: flex;

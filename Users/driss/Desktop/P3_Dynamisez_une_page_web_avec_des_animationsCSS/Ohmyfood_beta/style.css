@@ -64,6 +64,11 @@
   font-size: x-large;
   color: whitesmoke;
 }
+@media (min-width: 1024px) {
+  .btn__gradiant-purple {
+    max-width: 40%;
+  }
+}
 .btn__gradiant-purple:hover {
   transform: scale(1.15);
   transition-duration: 500ms;
@@ -103,6 +108,11 @@
   box-shadow: 0px 5px 20px #999;
   cursor: initial;
 }
+@media (min-width: 1024px) {
+  .card {
+    max-width: 45%;
+  }
+}
 
 .card__image {
   display: flex;
@@ -138,7 +148,6 @@
 
 body {
   margin: auto;
-  max-width: 669px;
   min-width: 360px;
   background-color: #f6F6F6;
 }
@@ -185,6 +194,13 @@ header img {
   width: 100%;
   background-color: #ffffff;
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .order__bloc {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .order__titre {
@@ -363,7 +379,7 @@ h1, h2, h3 {
   justify-content: center;
   text-align: center;
   font-weight: bolder;
-  margin: 10% 16% 0% 16%;
+  margin: 5% 16% 0% 16%;
 }
 
 .explore p {
@@ -371,7 +387,7 @@ h1, h2, h3 {
   width: 100%;
   justify-content: center;
   text-align: center;
-  margin: 2% 10% 0% 10%;
+  margin: 2% 10% 2% 10%;
   color: #353535;
 }
 
@@ -394,6 +410,11 @@ h1, h2, h3 {
   text-align: center;
   color: #4AAE94;
   background-color: #99E2D0;
+}
+@media (min-width: 1024px) {
+  .card__image p {
+    margin-left: 37%;
+  }
 }
 
 footer h4 {
@@ -572,7 +593,8 @@ footer h4 {
 /*                     LOADER                        */
 .loader-container {
   position: fixed;
-  background: linear-gradient(#9356DC, #FF79DA);
+  backdrop-filter: blur(15px);
+  background-color: rgba(182, 182, 182, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,17 +613,19 @@ footer h4 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #f6F6F6;
+  background: #9356DC;
   margin: 0 15px;
   animation: loader infinite 0.3s alternate;
 }
 
 .d2 {
   animation-delay: 0.05s;
+  background: #FF79DA;
 }
 
 .d3 {
   animation-delay: 0.1s;
+  background: #99E2D0;
 }
 
 @keyframes loader {

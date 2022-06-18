@@ -16,6 +16,9 @@ display: flex;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
     cursor: initial;
+        @media (min-width: 1024px) {
+            max-width: 45%;
+        }
 }
 
 .card__image {

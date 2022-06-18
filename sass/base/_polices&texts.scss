@@ -40,19 +40,20 @@ h1, h2, h3 {
     justify-content: center;
     text-align: center;
     font-weight: bolder;
-    margin: 10% 16% 0% 16%;
+    margin: 5% 16% 0% 16%;
 }
 .explore p {
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin: 2% 10% 0% 10%;
+    margin: 2% 10% 2% 10%;
     color: $colour-footer;
 }
 .explore a {
     margin: auto;
 }
+
 .order__titre p {
     margin-top: 10%;
 }
@@ -67,6 +68,9 @@ h1, h2, h3 {
     text-align: center;
     color: $colour-new__text;
     background-color: $colour-new;
+        @media (min-width: 1024px) {
+            margin-left: 37%;
+        }
 }
 footer h4 {
     font-family: 'Shrikhand', cursive;
