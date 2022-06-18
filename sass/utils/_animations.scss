@@ -110,61 +110,55 @@
 
 /*                     LOADER                        */
 
-.loader-zone {
-    background: $colour-tertiary;
-    padding-top: 50%;
+
+.loader-container{
+    position: fixed;
+    background: linear-gradient($colour-primary, $colour-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
     color: #FFF;
-    text-align: center;
+    pointer-events: none;
+    animation: finish linear 1s;
+    animation-fill-mode: forwards;
+    
+}
+.dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $colour-background;
+    margin: 0 15px;
+    animation: loader infinite 0.3s alternate;
+}
+.d2 {
+    animation-delay: 0.05s;
+}
+.d3 {
+   animation-delay: 0.1s;
 }
 
-.loader {
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
+@keyframes loader {
+    100%{
+        transform: translateY(-30px);
+    }
+}
+@keyframes finish {
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
-.loader-circles {
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FFF;
-    animation: spin 1s linear infinite;
-}
-.loader-circles::after {
-    content: '';
-    position: absolute;
-    top: 5px; 
-    left: 5px;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FFF;
-    opacity: 0.8;
-    animation: spin 5s linear infinite;
-}
-.loader-circles::before {
-    content: '';
-    position: absolute;
-    top: 12px; 
-    left: 12px;
-    bottom: 12px;
-    right: 12px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #FFF;
-    opacity: 0.8;
-    animation: spin 2.5s linear infinite;
-}
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
 /* heart*/
 @keyframes fillHeart {
     0%{
