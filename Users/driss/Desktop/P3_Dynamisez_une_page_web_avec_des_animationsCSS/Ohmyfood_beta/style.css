@@ -542,10 +542,10 @@ footer h4 {
 
 @keyframes text {
   0% {
-    transform: translateX(-220%);
+    margin-right: 20%;
   }
   100% {
-    transform: translateX(-220%);
+    margin-right: 20%;
   }
 }
 .checked-circle {
