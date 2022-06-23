@@ -95,6 +95,10 @@
     background: $colour-new;
     right: 10%;
     opacity: 0;
+    @media (min-width: 1024px) {
+        right: 6%;
+        width: 6%;
+    }
 }
 @keyframes checked {
     0%{
@@ -107,7 +111,17 @@
         width: 15%;
     }
 }
-
+@keyframes checkedQuerie1 {
+    0%{
+        width: 0%;
+    }
+    50% {
+        width: 3%;
+    }
+    100%{
+        width: 6%;
+    }
+}
 /*                     LOADER                        */
 
 

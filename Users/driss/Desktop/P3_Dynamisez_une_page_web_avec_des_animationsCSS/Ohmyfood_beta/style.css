@@ -53,7 +53,6 @@
 .btn__gradiant-purple {
   background: linear-gradient(#9356DC, #FF79DA);
   display: flex;
-  width: 50%;
   height: 80px;
   min-width: 330px;
   margin: auto;
@@ -83,6 +82,12 @@
   border-radius: 25px;
   justify-content: space-between;
   flex-wrap: nowrap;
+}
+@media (min-width: 1024px) {
+  .btn--restaurant {
+    width: 90%;
+    max-width: 90%;
+  }
 }
 
 .btn--order__position {
@@ -268,10 +273,11 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 .titre__menu {
   font-weight: bolder;
-  width: 100%;
+  width: 90%;
   height: 50%;
   position: relative;
   bottom: 10%;
@@ -301,6 +307,10 @@ footer a {
 @media (min-width: 1024px) {
   .menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
 }
 
@@ -598,6 +608,12 @@ footer h4 {
   right: 10%;
   opacity: 0;
 }
+@media (min-width: 1024px) {
+  .checked-circle {
+    right: 6%;
+    width: 6%;
+  }
+}
 
 @keyframes checked {
   0% {
@@ -608,6 +624,17 @@ footer h4 {
   }
   100% {
     width: 15%;
+  }
+}
+@keyframes checkedQuerie1 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 3%;
+  }
+  100% {
+    width: 6%;
   }
 }
 /*                     LOADER                        */
