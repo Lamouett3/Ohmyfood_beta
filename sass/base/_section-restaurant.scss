@@ -60,19 +60,19 @@
         }
 }
 .section--entree {
-    animation: section--entree 600ms;
+    animation: sectionEntree 500ms ease-in-out;
         @media (min-width: 1024px) {
             width: 30%;
         }
 }
 .section--plat {
-    animation: section--plat 900ms;  
+    animation: sectionPlat 1s ease-in-out;  
         @media (min-width: 1024px) {
             width: 30%;
         }
 }
 .section--dessert {
-    animation: section--plat 1.2s;  
+    animation: sectionDessert 1.5s ease-in-out;  
         @media (min-width: 1024px) {
             width: 30%;
         }

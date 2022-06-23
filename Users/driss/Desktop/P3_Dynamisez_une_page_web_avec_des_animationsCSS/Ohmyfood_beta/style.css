@@ -315,7 +315,7 @@ footer a {
 }
 
 .section--entree {
-  animation: section--entree 600ms;
+  animation: sectionEntree 500ms ease-in-out;
 }
 @media (min-width: 1024px) {
   .section--entree {
@@ -324,7 +324,7 @@ footer a {
 }
 
 .section--plat {
-  animation: section--plat 900ms;
+  animation: sectionPlat 1s ease-in-out;
 }
 @media (min-width: 1024px) {
   .section--plat {
@@ -333,7 +333,7 @@ footer a {
 }
 
 .section--dessert {
-  animation: section--plat 1.2s;
+  animation: sectionDessert 1.5s ease-in-out;
 }
 @media (min-width: 1024px) {
   .section--dessert {
@@ -528,7 +528,7 @@ footer h4 {
 }
 
 /* SECTION ANIMATION MENU */
-@keyframes section--entree {
+@keyframes sectionEntree {
   0% {
     opacity: 0;
     transform: translateY(8px);
@@ -542,7 +542,7 @@ footer h4 {
     transform: translateY(0);
   }
 }
-@keyframes section--plat {
+@keyframes sectionPlat {
   0% {
     opacity: 0;
     transform: translateY(8px);
@@ -556,7 +556,7 @@ footer h4 {
     transform: translateY(0);
   }
 }
-@keyframes section--dessert {
+@keyframes sectionDessert {
   0% {
     opacity: 0;
     transform: translateY(8px);
@@ -668,7 +668,7 @@ footer h4 {
   z-index: 10;
   color: #FFF;
   pointer-events: none;
-  animation: finish linear 1s;
+  animation: finish linear 2s;
   animation-fill-mode: forwards;
 }
 

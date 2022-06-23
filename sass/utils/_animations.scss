@@ -1,6 +1,6 @@
 /* SECTION ANIMATION MENU */
 
-@keyframes section--entree{
+@keyframes sectionEntree{
     0% {
         opacity: 0;
         transform: translateY(8px);
@@ -14,7 +14,7 @@
         transform: translateY(0);
     }
 }
-@keyframes section--plat{
+@keyframes sectionPlat{
     0% {
         opacity: 0;
         transform: translateY(8px);
@@ -28,7 +28,7 @@
         transform: translateY(0);
     }
 }
-@keyframes section--dessert{
+@keyframes sectionDessert{
     0% {
         opacity: 0;
         transform: translateY(8px);
@@ -144,7 +144,7 @@
     z-index: 10;
     color: #FFF;
     pointer-events: none;
-    animation: finish linear 1s;
+    animation: finish linear 2s;
     animation-fill-mode: forwards;
     
 }
