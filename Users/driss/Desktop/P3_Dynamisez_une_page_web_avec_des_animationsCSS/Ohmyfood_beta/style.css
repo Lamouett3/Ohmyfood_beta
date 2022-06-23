@@ -391,6 +391,15 @@ h1, h2, h3 {
 .menu h2 {
   color: #353535;
   font-family: "Roboto", sans-serif;
+  width: 0;
+}
+
+.menu h2:after {
+  content: "";
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
 }
 
 .menu p {
@@ -582,6 +591,12 @@ footer h4 {
   animation: checked linear 500ms;
   opacity: 1;
 }
+@media (min-width: 1024px) {
+  .btn--restaurant:hover .checked-circle {
+    animation: checkedQuerie1 linear 500ms;
+    opacity: 1;
+  }
+}
 .btn--restaurant:hover i {
   transform: rotate(360deg);
   transition-duration: 500ms;
@@ -626,6 +641,7 @@ footer h4 {
     width: 15%;
   }
 }
+/* Zone d'animation pour les mediaQueries */
 @keyframes checkedQuerie1 {
   0% {
     width: 0%;

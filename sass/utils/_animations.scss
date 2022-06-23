@@ -66,6 +66,10 @@
         .checked-circle{
             animation: checked linear 500ms;
             opacity: 1;
+            @media (min-width: 1024px) {
+                animation: checkedQuerie1 linear 500ms;
+                opacity: 1;
+            }
         }
         i {
             transform: rotate(360deg);
@@ -111,6 +115,8 @@
         width: 15%;
     }
 }
+/* Zone d'animation pour les mediaQueries */
+
 @keyframes checkedQuerie1 {
     0%{
         width: 0%;

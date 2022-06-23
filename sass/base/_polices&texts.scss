@@ -24,6 +24,15 @@ h1, h2, h3 {
 .menu h2{
     color: $colour-footer ;
     font-family: 'Roboto', sans-serif;
+    width: 0;
+}
+.menu h2:after {
+    content: "";
+    width: 4rem;
+    height: 0.25rem;
+    background-color: $colour-new;
+    position: absolute;
+
 }
 .menu p {
     font-family: 'Roboto', sans-serif;
