@@ -8,11 +8,13 @@ header {
     height: 80px;
     justify-content: center;
     background-color: $colour-background--two;
+    box-shadow: 0px 0px 10px 0px $colour-description;
+    position: relative;
 }
 
 header img {
     margin: auto;
-    height: 30px;
+    height: 45%;
 
 }
 .locate {
@@ -20,7 +22,7 @@ header img {
     background-color: $colour-background__locate;
     justify-content: center;
     font-weight: bolder;
-    border-top: 5px solid rgba(153, 153, 153, 0.04);
+    height: 55px;
 }
 
 .explore {
