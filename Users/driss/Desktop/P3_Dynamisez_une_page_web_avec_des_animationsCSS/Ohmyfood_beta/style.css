@@ -24,6 +24,16 @@
   font-size: larger;
   max-width: 325px;
 }
+@media (min-width: 1024px) {
+  .btn__colour--one {
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn__colour--one {
+    max-width: 600px;
+  }
+}
 .btn__colour--one:hover {
   transition-duration: 500ms;
   background-color: #F5EDFF;
@@ -35,6 +45,16 @@
   font-size: larger;
   max-width: 325px;
 }
+@media (min-width: 1024px) {
+  .btn__colour--two {
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn__colour--two {
+    max-width: 600px;
+  }
+}
 .btn__colour--two:hover {
   transition-duration: 500ms;
   background-color: #F5EDFF;
@@ -45,6 +65,16 @@
   color: black;
   font-size: larger;
   max-width: 325px;
+}
+@media (min-width: 1024px) {
+  .btn__colour--three {
+    max-width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .btn__colour--three {
+    max-width: 600px;
+  }
 }
 .btn__colour--three:hover {
   transition-duration: 500ms;
@@ -226,6 +256,12 @@ header img {
   margin-right: 328px;
   margin-top: 10px;
   position: absolute;
+}
+@media (min-width: 1024px) {
+  .order--number {
+    top: 25%;
+    margin: 0;
+  }
 }
 
 .order--number p {

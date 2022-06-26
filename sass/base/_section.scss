@@ -71,6 +71,10 @@ header img {
     margin-right: 328px;
     margin-top: 10px;
     position: absolute;
+        @media (min-width: 1024px) {
+            top: 25%;
+            margin: 0;
+        }
 }
 .order--number p {
     margin: 25%;

@@ -20,6 +20,12 @@
                 color: black;
                 font-size: larger;
                 max-width: 325px;
+                @media (min-width: 1024px) {
+                    max-width: 30%;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    max-width: 600px;
+                }
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;
@@ -31,6 +37,12 @@
                 color: black;
                 font-size: larger;
                 max-width: 325px;
+                @media (min-width: 1024px) {
+                   max-width: 30%;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    max-width: 600px;
+                }
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;
@@ -42,6 +54,12 @@
                 color: black;
                 font-size: larger;
                 max-width: 325px;
+                @media (min-width: 1024px) {
+                    max-width: 30%;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    max-width: 600px;
+                }
                     &:hover {
                         transition-duration: 500ms;
                         background-color: $colour-background__order3;
