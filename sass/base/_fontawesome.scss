@@ -59,7 +59,11 @@
 }
 .fa-check-circle {
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 35%;
+    left: 35%;
+    font-size: xx-large;
     color: $colour-background;
+        @media (min-width:1024px) {
+            position: relative;
+        }
 }

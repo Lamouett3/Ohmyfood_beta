@@ -99,11 +99,12 @@
     background: $colour-new;
     right: 10%;
     opacity: 0;
-    @media (min-width: 1024px) {
-        right: 6%;
-        width: 6%;
-    }
+        @media (min-width: 1024px) {
+            position: inherit;
+            width: 40%;
+        }
 }
+
 @keyframes checked {
     0%{
         width: 0%;
@@ -122,10 +123,10 @@
         width: 0%;
     }
     50% {
-        width: 3%;
+        width: 20%;
     }
     100%{
-        width: 6%;
+        width: 40%;
     }
 }
 /*                     LOADER                        */
