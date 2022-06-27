@@ -1,7 +1,7 @@
 /* FONT AWESOME SECTION */
 
 .fa-map-marker-alt{
-    margin: 17px 15px;
+    margin: 23px 17px;
 }
 .fa-mobile-alt {
     margin: 25px 10px;
@@ -60,10 +60,17 @@
 .fa-check-circle {
     position: absolute;
     top: 35%;
-    left: 35%;
+    left: 23%;
     font-size: xx-large;
     color: $colour-background;
+    @media (min-width: 446px) and (max-width: 1023px) {
+        position: relative;
+        top: 35%;
+        left: 35%;
+    }
         @media (min-width:1024px) {
             position: relative;
+            top: 35%;
+            left: 27%;
         }
 }

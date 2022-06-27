@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:./Users/driss/Desktop/P3_Dynamisez_une_page_web_avec_des_animationsCSS/Ohmyfood_beta/style.css"
+   "sass": "sass --watch ./sass/main.scss:./style/style.css"
    },
   "repository": {
     "type": "git",

@@ -31,8 +31,8 @@
         }
         &--description {
             color: $colour-description;
-            font-size: 15px;
-            width: 70%;
+            font-size: 13px;
+            width: 90%;
             height: 50%;
             position: relative;
             bottom: 65%;
@@ -79,7 +79,9 @@
 }
 .bloc--text {
     display: flex;
-    margin-top: 2%;
+    margin-top: 14px;
+    font-size: 15px;
+    margin-right: 10%;
     flex-wrap: wrap;
     white-space: nowrap;
     overflow: hidden;

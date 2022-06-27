@@ -31,7 +31,7 @@
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .btn__colour--one {
-    max-width: 600px;
+    max-width: 80%;
   }
 }
 .btn__colour--one:hover {
@@ -52,7 +52,7 @@
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .btn__colour--two {
-    max-width: 600px;
+    max-width: 80%;
   }
 }
 .btn__colour--two:hover {
@@ -73,7 +73,7 @@
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .btn__colour--three {
-    max-width: 600px;
+    max-width: 80%;
   }
 }
 .btn__colour--three:hover {
@@ -99,14 +99,13 @@
   }
 }
 .btn__gradiant-purple:hover {
-  transform: scale(1.15);
   transition-duration: 500ms;
   box-shadow: 0px 5px 20px #999;
 }
 .btn--restaurant {
   display: flex;
-  width: 80%;
-  height: 100px;
+  width: 90%;
+  height: 85px;
   margin: auto;
   margin-bottom: 30px;
   border-radius: 25px;
@@ -325,8 +324,8 @@ footer a {
 }
 .titre--description {
   color: #484848;
-  font-size: 15px;
-  width: 70%;
+  font-size: 13px;
+  width: 90%;
   height: 50%;
   position: relative;
   bottom: 65%;
@@ -383,7 +382,9 @@ footer a {
 
 .bloc--text {
   display: flex;
-  margin-top: 2%;
+  margin-top: 14px;
+  font-size: 15px;
+  margin-right: 10%;
   flex-wrap: wrap;
   white-space: nowrap;
   overflow: hidden;
@@ -483,14 +484,17 @@ h1, h2, h3 {
 .explore p {
   display: flex;
   width: 100%;
+  font-size: 18px;
   justify-content: center;
   text-align: center;
   margin: 2% 10% 2% 10%;
-  color: #353535;
+  color: #484848;
 }
 
 .explore a {
   margin: auto;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .order__titre p {
@@ -521,7 +525,7 @@ footer h4 {
 
 /* FONT AWESOME SECTION */
 .fa-map-marker-alt {
-  margin: 17px 15px;
+  margin: 23px 17px;
 }
 
 .fa-mobile-alt {
@@ -582,13 +586,22 @@ footer h4 {
 .fa-check-circle {
   position: absolute;
   top: 35%;
-  left: 35%;
+  left: 23%;
   font-size: xx-large;
   color: #f6F6F6;
+}
+@media (min-width: 446px) and (max-width: 1023px) {
+  .fa-check-circle {
+    position: relative;
+    top: 35%;
+    left: 35%;
+  }
 }
 @media (min-width: 1024px) {
   .fa-check-circle {
     position: relative;
+    top: 35%;
+    left: 27%;
   }
 }
 
@@ -681,11 +694,11 @@ footer h4 {
 }
 .checked-circle {
   position: absolute;
-  height: 100px;
+  height: 85px;
   width: 15%;
   border-radius: 0 20px 20px 0;
   background: #99E2D0;
-  right: 10%;
+  right: 5%;
   opacity: 0;
 }
 @media (min-width: 1024px) {

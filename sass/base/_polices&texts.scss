@@ -54,13 +54,16 @@ h1, h2, h3 {
 .explore p {
     display: flex;
     width: 100%;
+    font-size: 18px;
     justify-content: center;
     text-align: center;
     margin: 2% 10% 2% 10%;
-    color: $colour-footer;
+    color: $colour-description;
 }
-.explore a {
+.explore a{
     margin: auto;
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 .order__titre p {
