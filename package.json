@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:./style/style.css"
+   "sass": "sass --watch ./sass/main.scss:./style/style.css",
+   "prefix": "postcss /Users/driss/Desktop/P3_Dynamisez_une_page_web_avec_des_animationsCSS/Ohmyfood_beta/style/style.css --use autoprefixer -d /Users/driss/Desktop/P3_Dynamisez_une_page_web_avec_des_animationsCSS/Ohmyfood_beta/style/prefixed/"
    },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Lamouett3/Ohmyfood_beta/issues"
   },
