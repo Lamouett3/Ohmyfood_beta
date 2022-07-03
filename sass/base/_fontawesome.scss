@@ -12,21 +12,17 @@
 .fa-store {
     margin: 25px 10px;
 }
+
 .heart__box {
    position: relative;
    bottom: 10%;
-    svg{
-    width: 30px;
-    height: 30px;
-    }
-    &:hover{
-        #full-heart {
-
-            animation: 2s fillHeart linear;
-            animation-fill-mode: forwards;
-        }
-    }
 }
+.heart__page {
+    position: relative;
+    right: 30px;
+    top: 25px;
+}
+/*
 .heart__box--menu {
     position: relative;
     right: 30px;
@@ -49,6 +45,7 @@
     left: 0;
     opacity: 0;
 }
+*/ 
 .fa-utensils {
     margin: 18px 8px 0px 0px;
     padding-right: 7px;
@@ -74,3 +71,4 @@
             left: 27%;
         }
 }
+
