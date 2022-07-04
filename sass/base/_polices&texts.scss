@@ -26,12 +26,13 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     width: 0;
 }
-.menu h2:after {
+.menu h2::after {
     content: "";
     width: 4rem;
     height: 0.25rem;
     background-color: $colour-new;
     position: absolute;
+    display: flex;
 
 }
 .menu p {
